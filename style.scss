@@ -1,0 +1,77 @@
+$bgcolor: rgb(108, 192, 106);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: 1px solid #333;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(74, 226, 94), #1a25c0);
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255, 0.7);
+}
+header {
+    text-align: center;
+    padding: 30px;
+    h3 {
+        padding: 10px;
+    }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: rgb(255, 255, 255, 0.7);
+    }
+    p {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    transition: 0.5s;
+}
+.card {
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    &__items {
+        margin: 25px;
+        width: 20%;
+        height: 380px;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    &__items-days {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 6px 20px;
+        background-color: $bgcolor;
+        border-radius: 0 10px 0 10px;
+    }
+    &__items-demo {
+        position: absolute;
+        bottom: 30px;
+        left: 95px;
+        padding: 6px 20px;
+        background-color: $bgcolor;
+        border-radius: 10px;
+        a {
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        &:hover {
+            // transform: scale(1.1);
+            background: rgb(108, 192, 106, 0.7);
+        }
+    }
+}

@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #4ae25e, #1a25c0);
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  transition: 0.5s;
+}
+header h3 {
+  padding: 10px;
+}
+header a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+header p {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.card {
+  width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+}
+.card__items {
+  margin: 25px;
+  width: 20%;
+  height: 380px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card__items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card__items-days {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 20px;
+  background-color: #6cc06a;
+  border-radius: 0 10px 0 10px;
+}
+.card__items-demo {
+  position: absolute;
+  bottom: 30px;
+  left: 95px;
+  padding: 6px 20px;
+  background-color: #6cc06a;
+  border-radius: 10px;
+}
+.card__items-demo a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.card__items-demo:hover {
+  background: rgba(108, 192, 106, 0.7);
+}
+
+/*# sourceMappingURL=style.css.map */
